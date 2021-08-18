@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,36 @@
     <title>lucky birthday?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Patrick+Hand+SC&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="App">
-        <div class="heading-container">
-            <h1>Is Your Birthday Lucky?</h1>
-            <p>Let's check! Enter your birth date and lucky number...</p>
-        </div>
-        
-    </div> 
-   <img class="image" src="./assets/images/birthday-gift.png" >
-   
-   <div class="birthdate">
-    <label for="birth-date">Enter your birthday</label>
-    <input type="date" id="birth-date">  
-   </div>
-   <div class="luckynumber">
-    <label for="lucky-number">Enter your lucky number</label>
-    <input type="number" id="lucky-number">
-   </div>
-   <button id="check">Check</button>
-   
+        <section class="section">
+            <div class="heading-container">
+                <h1>Is Your Birthday Lucky?</h1>
+                <p>Let's check! Enter your birth date and lucky number...</p>
+            </div>
+
+
+            <img class="image" src="./assets/images/birthday-gift.png">
+
+            <div class="birthdate">
+                <label class="label" for="birth-date">Enter your birthday</label>
+                <input class="input-field" type="date" id="birth-date">
+            </div>
+            <div class="luckynumber">
+                <label class="label" for="lucky-number">Enter your lucky number</label>
+                <input class="input-field" type="number" id="lucky-number">
+            </div>
+            <button class="button"id="check">Check</button>
+            <div id="output-area"></div>
+    </div>
+    </section>
+
 </body>
 <script src="app.js"></script>
+
 </html>

@@ -1,6 +1,7 @@
 const birthDate = document.querySelector("#birth-date");
 const luckyNumber = document.querySelector("#lucky-number");
 const checkButton = document.querySelector("#check");
+const outputArea = document.querySelector("#output-area");
 
 checkButton.addEventListener("click", checkBirthdate);
 
@@ -18,9 +19,13 @@ function checkBirthdate(){
     console.log(sum);
     var newLuckyNumber = +luckyNumber.value;
     if(Math.trunc(sum%newLuckyNumber)===0 ){
-        console.log("Your birthday is lucky");
+       outputArea.innerText = "Yay! Your birthday is lucky for you."
+       outputArea.style.fontWeight = "bold";
+       outputArea.style.fontSize= "larger";
     }
     else{
-        console.log("Your birthday is not lucky");
+        outputArea.innerText="Sad :( Your birthday is not lucky."
+        outputArea.style.fontWeight = "bold";
+        outputArea.style.fontSize= "larger";
     }
 }
